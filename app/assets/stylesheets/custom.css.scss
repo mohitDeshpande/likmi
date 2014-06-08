@@ -3,6 +3,7 @@ header {
 	background: none;
 	position: absolute;
 	top: 60px;
+	z-index: 4;
 }
 
 .container-fluid {
@@ -14,18 +15,18 @@ header {
 }
 
 .navbar-brand {
-	font-size: 20px;
-	font-family: "Lato", sans-serif;
-	font-weight: 900;
+	font-size: 23px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
 	color: #3d0f0f;
 	&:hover {
 		color: #3d0f0f;
 	};
 }
 .nav > li {
-	margin-left: 30px;
+	margin-left: 90px;
 	a {
-		font-family: "Lato", sans-serif;
+		font-family: "Open Sans", sans-serif;
 		font-size: 17px;
 		font-weight: 700;
 		color: #ffffff;
@@ -35,6 +36,26 @@ header {
 		}
 	}
 }
+
+
+/* Body */
+
+
+.head-cover {
+	width: 100%;
+	height: 100vh;
+	margin-top: -72px;
+	background-image: url(image_path('banner.jpg'));
+	z-index:initial;
+}
+
+.second {
+	width: 100%;
+	height: 100vh;
+	z-index: initial;
+	background-color: #243f86;
+}
+
 
  /* temporary body variable for clarity */
  body {

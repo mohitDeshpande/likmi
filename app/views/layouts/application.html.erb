@@ -4,7 +4,7 @@
   <title>Likmi &middot; <%= yield(:title) %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <link href='http://fonts.googleapis.com/css?family=Lato:700,900' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800", media: "all" %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
@@ -13,6 +13,6 @@
 	<%= render 'layouts/header' %>
 	<%= yield %>
 
-	<%= debug(params) if Rails.env.development? %> 
+ 
 </body>
 </html>

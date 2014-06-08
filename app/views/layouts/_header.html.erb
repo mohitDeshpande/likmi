@@ -14,12 +14,16 @@
     	<div class="collapse navbar-collapse" id="collapse-menu">
     		<ul class="nav navbar-nav navbar-right">
     			<li class="<%= 'active' if current_page?(root_path) %>">
-    				<%= link_to 'Home', root_path %>
+    				<%= link_to root_path do %>
+                        <span class="glyphicon glyphicon-home"></span> Home
+                    <% end %>
     			</li> 
     			<li class="<%= 'active' if current_page?(menu_path) %>">
-    				<%= link_to 'Menu', menu_path %>
+    				<%= link_to menu_path do %>
+                        <span class="glyphicon glyphicon-list-alt"></span>  Menu
+                    <% end %>
     			</li>
     		</ul>
     	</div><!-- navbar-collapse -->
-    </div><!--container-fluid>
+    </div><!--container-fluid -->
 </header>
