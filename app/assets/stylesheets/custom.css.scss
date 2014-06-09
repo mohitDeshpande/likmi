@@ -14,6 +14,9 @@ header {
 	background-color: #ffffff;
 }
 
+.active > a{
+	color : #7a5230;
+}
 .navbar-brand {
 	font-size: 23px;
 	font-family: "Open Sans", sans-serif;
@@ -23,6 +26,12 @@ header {
 		color: #3d0f0f;
 	};
 }
+.navbar-brand > img {
+	height: 60px;
+	width: 75px;
+	margin-top: -17px;
+}
+
 .nav > li {
 	margin-left: 90px;
 	a {
@@ -32,7 +41,7 @@ header {
 		color: #ffffff;
 		&:hover {
 			background-color: transparent;
-			color: #b2b2b2;
+			color: #3d0f0f;
 		}
 	}
 }
@@ -42,16 +51,37 @@ header {
 
 
 .head-cover {
-	width: 100%;
-	height: 100vh;
 	margin-top: -72px;
 	background-image: url(image_path('banner.jpg'));
-	z-index:initial;
+	overflow: hidden;
+	z-index: initial;
+	background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+#hero-div {
+	padding: 60px;
+}
+
+#hero > div > h1{
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+	color: #ffffff;
+	font-size: 2.5em;
+}
+
+#hero > div > p {
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	color: #dbdbdb;
+	margin-top: 40px;
+	font-size: 1.3em;
 }
 
 .second {
-	width: 100%;
-	height: 100vh;
 	z-index: initial;
 	background-color: #243f86;
 }

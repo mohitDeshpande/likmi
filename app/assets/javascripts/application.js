@@ -18,3 +18,9 @@
 //
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+    $("section").height($(window).height());
+    $("section").width($(window).width());
+    $("#hero").css('margin-top', ($(window).height())*(30/100));
+});
