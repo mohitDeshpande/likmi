@@ -20,13 +20,32 @@
 //= require_tree .
 
 ready = function(){
-	    $("section").height($(window).height());
-	    $("section").width($(window).width());
+		// get height and width of section equal to that of the browser
+		var pageWidth = $(window).width();
+		var pageHeight = $(window).height();
+	    
+	    // set height and width of each section equal to that of browser
+	    $("section").height(pageHeight);
+	    $("section").width(pageWidth);
+	    
+	    // dynamic margin for hero section equal to 30% the height of the browser window
 	    $("#hero").css('margin-top', ($(window).height())*(30/100));
-	    $("#scroll-button").click(function() {
+
+	    // vertically center align the element only for desktops and tablets
+		if (pageWidth > 768) {
+	    	$(".center-block").css('padding-top', ($(window).height())*(23/100));
+	    }
+	    
+	    // scrolls with a smooth transition to the next section.
+ 	    $("#scroll-button").click(function() {
 			$('html, body').animate({
 				scrollTop: $("#second").offset().top
 				}, 2000);
+		});
+
+ 	    // reloads page when window is resized
+		$(window).resize(function() {
+        	location.reload();
 		});
 	};
 
