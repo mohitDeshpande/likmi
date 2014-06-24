@@ -75,7 +75,7 @@ section {
 	font-size: 2.5em;
 }
 
-#hero > div > p {
+#caption {
 	text-align: center;
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
@@ -84,6 +84,21 @@ section {
 	font-size: 1.3em;
 }
 
+#about-modal {
+	text-align: center;
+	padding-top: 40px;
+	> button {
+		background-color: transparent;
+		color: white;
+	}
+}
+
+.modal-content {
+	font-family: "Lato", sans-serif;
+	.modal-title {
+		font-weight: 700;
+	}
+}
 
 .round-button {
 	width: 45px;
@@ -103,7 +118,7 @@ section {
 	position: absolute;
 	left: 50%;
 	bottom: 90px;
-	margin-left: -26.5px;
+	margin-left: -20px;
 	margin-bottom: 20px;
 	&:hover {
 		opacity: 1;
@@ -116,7 +131,7 @@ i {
 }
 
 #scroll-button {
-	bottom: 10px;
+	bottom: -5px;
 }
 
 

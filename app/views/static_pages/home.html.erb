@@ -5,9 +5,35 @@
 		<div class="row">
 			<h1>Chocolates with amazing insides</h1>
 		</div>
-		<div class="row">
+		<div class="row" id="caption">
 			<p class="col-md-6 col-md-offset-3">Each and every chocolate made by Likmi has a wonder filling inside that you just can't resist</p>
 		</div>
+		<div class="row" id="about-modal">
+			<button class="btn btn-default btn-lg"  data-toggle="modal" data-target="#about">
+ 				Who are we?
+			</button>
+			<!-- Modal -->
+			<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+    				<div class="modal-content">
+    					<div class="modal-header">
+    			    		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    			    		<h4 class="modal-title" id="ModalLabel">Who we are</h4>
+    			  		</div>
+    					<div class="modal-body">
+    						<div class="row">
+    							<%= image_tag ("logo.png") %>
+    						</div>
+       			    		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque, nibh et sodales lacinia, arcu risus gravida ipsum, vel faucibus odio turpis vel justo. Donec porttitor magna tortor, vitae rutrum ipsum bibendum quis. Duis ac arcu porta, lacinia nulla quis, feugiat quam. In et velit nibh. Nullam nec leo nulla. In mollis augue quis urna vestibulum, ac pretium mauris porta. Quisque malesuada, metus ut scelerisque condimentum, diam augue sagittis diam, et tincidunt nibh velit in magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur magna vel lacus iaculis, at suscipit dolor sollicitudin. Fusce felis risus, egestas vitae eleifend non, consequat nec purus. Fusce adipiscing, nisl pulvinar facilisis interdum, nisi odio blandit neque, sit amet tempor erat velit sed dolor. Proin eu dolor rhoncus, aliquet libero accumsan, eleifend arcu.
+
+							Maecenas sed enim non lorem ullamcorper fringilla in sit amet tortor. Morbi quis pellentesque arcu. Ut vel posuere diam. Sed lobortis at enim bibendum pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam id lacus vehicula, suscipit purus id, eleifend dolor. Ut eleifend vel orci et commodo.
+    					</div>
+    			  		<div class="modal-footer">
+    			    		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    			  		</div>
+    				</div>
+  				</div>
+			</div>
 		<div class="row">
 			<button type="button" class="round-button" id="scroll-button"><i class="fa fa-angle-down"></i></button>
 		</div>

@@ -27,13 +27,16 @@ ready = function(){
 	    // set height and width of each section equal to that of browser
 	    $("section").height(pageHeight);
 	    $("section").width(pageWidth);
-	    
-	    // dynamic margin for hero section equal to 30% the height of the browser window
-	    $("#hero").css('margin-top', ($(window).height())*(30/100));
-
-	    // vertically center align the element only for desktops and tablets
-		if (pageWidth > 768) {
+		    
+	    // different styles for desktop and mobile
+		if (pageWidth > 768) { //desktop style
 	    	$(".center-block").css('padding-top', ($(window).height())*(23/100));
+	    	$("#hero").css('margin-top', ($(window).height())*(30/100));
+	    } else { // mobile style
+	    	$("#hero").css('margin-top', ($(window).height())*(18/100));
+	    	$("#caption").css('margin-top', (20));
+	    	$("#about-modal").css('padding-top', (20));
+	    	$("header").css('top', (15));
 	    }
 	    
 	    // scrolls with a smooth transition to the next section.
