@@ -12,10 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//
-// add bootstrap js
-//= require bootstrap.min
-//
 //= require turbolinks
 //= require_tree .
 
@@ -53,7 +49,7 @@ ready = function(){
  	    // reloads page when window is resized
 		$(window).resize(function() {
         	location.reload();
-		});
+		}); 
 	};
 
 $(document).ready(ready);
