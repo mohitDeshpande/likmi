@@ -19,7 +19,6 @@ header {
 }
 .navbar-brand {
 	font-size: 23px;
-	font-family: "Lato", sans-serif;
 	font-weight: 700;
 	color: #3d0f0f;
 	&:hover {
@@ -35,7 +34,6 @@ header {
 .nav > li {
 	margin-right: 90px;
 	a {
-		font-family: "Lato", sans-serif;
 		font-size: 17px;
 		font-weight: 700;
 		color: #ffffff;
@@ -49,14 +47,17 @@ header {
 
 /* Body */
 
+* {
+	font-family: "Lato", sans-serif;
+}
+
 section {
 	z-index: initial;
 }
 
-
 .head-cover {
 	margin-top: -72px;
-	background-image: url(image_path('banner.jpg'));
+	background-image: url(image_path('banner1.jpg'));
 	overflow: hidden;
 	background-position: center center;
     background-repeat: no-repeat;
@@ -69,7 +70,6 @@ section {
 
 #hero > div > h1{
 	text-align: center;
-	font-family: "Lato", sans-serif;
 	font-weight: 700;
 	color: #ffffff;
 	font-size: 2.5em;
@@ -77,26 +77,49 @@ section {
 
 #caption {
 	text-align: center;
-	font-family: "Lato", sans-serif;
+	
 	font-weight: 300;
-	color: #dbdbdb;
 	margin-top: 40px;
 	font-size: 1.3em;
 }
 
-#about-modal {
-	text-align: center;
-	padding-top: 40px;
-	> button {
+.btn-default {
 		background-color: transparent;
-		color: white;
-	}
+		color: #ffffff;
+}
+
+
+#modal-button, #products-button {
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 4em;
+}
+
+#modal-button-top{
+	text-align: center;
+	margin-top: 100px
 }
 
 .modal-content {
-	font-family: "Lato", sans-serif;
 	.modal-title {
 		font-weight: 700;
+	}
+	> .modal-footer {
+		> button {
+			color: #000000;
+		}
+	}
+}
+
+.col-md-4 {
+	margin-top: 3em;
+	text-align: center;
+	img {
+		display: inline-block;
+	}
+	p {
+		margin-left: 40px;
+		margin-right: 40px;
 	}
 }
 
@@ -134,38 +157,57 @@ i {
 	bottom: -5px;
 }
 
-
-.col-md-4 {
-	margin-top: 3em;
-	text-align: center;
-	img {
-		display: inline-block;
-	}
-	p {
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-	&:last-child {
-		margin-bottom: 3em;
-	}
+.centered {
+	text-align: center;	
 }
+
+
 
 h3 {
 	text-align: center;
-	font-family: "Lato", sans-serif;
 	font-weight: 700;
 	color: #ffffff;
 }
 
 p {
 	text-align: center;
-	font-family: "Lato", sans-serif;
 	font-weight: 300;
-	color: #dbdbdb;
+	color: #ffffff;
 
+}
+
+/* Menu */
+
+.menu {
+	img{
+		overflow: visible;
+		&:hover {
+		width: 250px;
+		}
+	}
+}
+
+#order-button-top {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.img-grid {
+	.col-md-4 {
+		margin-top: 1em;
+		text-align: center;
+		img {
+			display: inline-block;
+		}
+		p {
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+	}
 }
 
  /* temporary body variable for clarity */
  body {
- 	background-color: #521515;
+ 	background-image: url(image_path('food.png'));
  }

@@ -1,3 +1,123 @@
 <%= provide(:title, 'Menu') %>
-<h1>StaticPages<small>#menu</small></h1>
-<p>Find me in app/views/static_pages/menu.html.erb</p>
+<div class="menu container-fluid">
+
+	<div  class="row">
+		<div class="row" id="order-button-top">
+			<button class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#order-now">
+ 				Order Now
+			</button>
+			<!-- Modal -->
+			<div class="modal fade" id="order-now" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+    				<div class="modal-content">
+    					<div class="modal-header">
+    			    		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    			    		<h4 class="modal-title" id="ModalLabel">Order Now</h4>
+    			  		</div>
+    					<div class="modal-body">
+       			    		Call: <a href="tel:+0123456789">012-345-6789</a>
+       			    	</div>
+    			  		<div class="modal-footer">
+    			    		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    			  		</div>
+    				</div>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="img-grid">
+		<div class="row">
+			<div class="col-md-4" data-toggle="modal" data-target="#order-now">
+				<%= image_tag "placeholder.svg", class:"img-circle img-responsive" %>
+				<div class="row">
+					<h3>item 1</h3>
+				</div>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada erat vitae nibh volutpat.</p>
+				</div>
+			</div>
+			<div class="col-md-4" data-toggle="modal" data-target="#order-now">
+				<%= image_tag "placeholder.svg", class:"img-circle" %>
+				<div class="row">
+					<h3>item 2</h3>
+				</div>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada erat vitae nibh volutpat.</p>
+				</div>
+			</div>
+			<div class="col-md-4" data-toggle="modal" data-target="#order-now">
+				<%= image_tag "placeholder.svg", class:"img-circle" %>
+				<div class="row">
+					<h3>item 3</h3>
+				</div>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada erat vitae nibh volutpat.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4" data-toggle="modal" data-target="#order-now">
+				<%= image_tag "placeholder.svg", class:"img-circle" %>
+				<div class="row">
+					<h3>item 1</h3>
+				</div>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada erat vitae nibh volutpat.</p>
+				</div>
+			</div>
+			<div class="col-md-4" data-toggle="modal" data-target="#order-now">
+				<%= image_tag "placeholder.svg", class:"img-circle" %>
+				<div class="row">
+					<h3>item 2</h3>
+				</div>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada erat vitae nibh volutpat.</p>
+				</div>
+			</div>
+			<div class="col-md-4" data-toggle="modal" data-target="#order-now">
+				<%= image_tag "placeholder.svg", class:"img-circle" %>
+				<div class="row">
+					<h3>item 3</h3>
+				</div>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada erat vitae nibh volutpat.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4" data-toggle="modal" data-target="#order-now">
+				<%= image_tag "placeholder.svg", class:"img-circle" %>
+				<div class="row">
+					<h3>item 1</h3>
+				</div>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada erat vitae nibh volutpat.</p>
+				</div>
+			</div>
+			<div class="col-md-4" data-toggle="modal" data-target="#order-now">
+				<%= image_tag "placeholder.svg", class:"img-circle" %>
+				<div class="row">
+					<h3>item 2</h3>
+				</div>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada erat vitae nibh volutpat.</p>
+				</div>
+			</div>
+			<div class="col-md-4" data-toggle="modal" data-target="#order-now">
+				<%= image_tag "placeholder.svg", class:"img-circle" %>
+				<div class="row">
+					<h3>item 3</h3>
+				</div>
+				<div class="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent malesuada erat vitae nibh volutpat.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="modal-button">
+		<button class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#order-now"> 				
+			Order Now
+		</button>
+	</div>
+</div>

@@ -33,9 +33,13 @@ ready = function(){
 	    	$(".center-block").css('padding-top', ($(window).height())*(23/100));
 	    	$("#hero").css('margin-top', ($(window).height())*(30/100));
 	    } else { // mobile style
-	    	$("#hero").css('margin-top', ($(window).height())*(18/100));
+	    	$("#cover").css('margin-top', (25));
+	    	$("#cover").css('height', (pageHeight - 75));
+	    	$("#hero").css('margin-top', (0));
 	    	$("#caption").css('margin-top', (20));
-	    	$("#about-modal").css('padding-top', (20));
+	    	$("#modal-button-top").css('margin-top', (20));
+	    	$("#order-button-top").css('margin-top', (40));
+	    	$("#products-button").css('padding-bottom', (40));
 	    	$("header").css('top', (15));
 	    }
 	    
