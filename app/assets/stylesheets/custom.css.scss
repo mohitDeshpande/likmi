@@ -207,6 +207,34 @@ p {
 	}
 }
 
+/* Footer */
+footer {
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+	a {
+	  color: #555;
+		&:hover {
+		  color: #222;
+		}
+	}
+	small {
+  		font-size: 1em;
+	}
+	ul {
+	  float: right;
+	  list-style: none;
+		li {
+		  float: left;
+  		margin-left: 10px;
+		}
+	}
+}
+
  /* temporary body variable for clarity */
  body {
  	background-image: url(image_path('food.png'));
